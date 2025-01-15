@@ -1,0 +1,31 @@
+<html>
+  <head>
+    
+    <title>New Message</title>
+  </head>
+  <body>
+    <h2>New Message:</h2>
+    <form method="POST" action="/new">
+      <!-- User Input -->
+      <label for="author">Author's Name:</label>
+      <br />
+      <input type="text" id="author" name="author" required />
+      <br /><br />
+
+      <!-- Message Text Input -->
+      <label for="messageText">Message:</label>
+      <br >
+      <textarea
+        id="messageText"
+        name="messageText"
+        rows="4"
+        cols="50"
+        required
+      ></textarea>
+      <br /><br />
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
