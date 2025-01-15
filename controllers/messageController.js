@@ -14,7 +14,7 @@ const getMessageById = asyncHandler(async (req, res) => {
   const { messageId } = req.params;
 
   const message = await req.messages.find(
-    (message) => message.id === Number(messageId)
+    (message) => message.id === messageId
   );
 
   if (!message) {

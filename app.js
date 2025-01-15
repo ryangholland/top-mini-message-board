@@ -13,19 +13,19 @@ app.use(express.urlencoded({ extended: true }));
 
 const messages = [
   {
-    id: 1,
+    id: crypto.randomUUID(),
     text: "It's like Lenin said. You look for the person who would benefit, and uh...uh, you know.",
     user: "The Dude",
     added: new Date(),
   },
   {
-    id: 2,
+    id: crypto.randomUUID(),
     text: "I am the Walrus.",
     user: "Donny",
     added: new Date(),
   },
   {
-    id: 3,
+    id: crypto.randomUUID(),
     text: "Shut the fuck up, Donny.",
     user: "Walter",
     added: new Date(),
